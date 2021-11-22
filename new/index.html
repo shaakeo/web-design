@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta nam<!e="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>许丹个人简历</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+               
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#99CCFF;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:#99CCFF;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#99CCFF;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+					
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                <main class="loading">
+                </main>
+                <img class="avatar" src="assets/images/portrait.jpg" style="display:flex;width:100%;height:auto">
+                </section>
+
+                <h1 class="name"><em>许丹</em></h1>
+                <h4 class="info-job">网络与新媒体/广州</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>许丹/ 女 / 18岁</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>未考级</span>
+
+                    </li>
+                    <li>
+                        <label>计算机水平</label>
+                        <span>未考级</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:19959868020" target="_blank">199-5986-8020</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="xud210092@stu.nfu.edu.cn" target="_blank">xud210092@stu.nfu.edu.cn</a>
+                    </li>
+                    <li>
+                        <label>个人主页</label>
+                        <a href="http://shakeeee.gitee.io/web-design-" target="_blank">xudan.com</a>
+                    </li>
+                    <li>
+                        <label>Gitee</label>
+                        <a href="https://gitee.com/shakeeee" target="_blank">gitee.com/shakeeee</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>HTML</label>
+                        <progress value="10" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>CSS</label>
+                        <progress value="10" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>JavaScript</label>
+                        <progress value="0" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Photoshop</label>
+                        <progress value="20" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>Node.js</label>
+                        <progress value="0" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>小程序</label>
+                        <progress value="0" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="assets/images/my wechat.PNG" style="width: 100%;" alt="">
+            </section>
+
+            <!-- 技术栈 -->
+            <!-- <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Node.js、MySQL、MongoDB、WordPress、ThinkPHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div> -->
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>北京师范大学泉州附属中学（初中）</span>
+                            <time>2015.9-2018.7</time>
+                        </h3>
+                        <p>专业排名
+                            <mark>X/XX</mark>，初中学习积极向上，担任英语课代表，副班长职位。是位爱党爱国的少先队员，并多次获得“三好学生”“优秀班干部”“积极分子” 称号。</p>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>泉州第九中学（高中）</span>
+                            <time>2018.9-2021.7</time>
+                        </h3>
+                        <p>专业排名
+                            <mark>X/XX</mark>，期间担任英语课代表，值日班长职位。认真负责，曾拿过区级英语作文三等奖，语文作文二等奖。</p>
+                    </li>
+					<li>
+                        <h3>
+                            <span>广州南方学院（本科）</span>
+                            <time>2021.9-至今</time>
+                        </h3>
+                        <p>专业排名
+                            <mark>X/XX</mark>
+                            ，就读于广州南方学院网络与新媒体专业，勤学好问。</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>生活经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]北京，西安研学</span>
+                            <time>2019.1</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li> 爬长城，进入北大学习参观，学习其思想作风。
+                               </li>
+                            <li>参观兵马俑，学习文化。</li>
+                            <li>记录研学心得体会。</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[经历2]图书管理员（暑假工）</span>
+                            <time>2021.6-2021.8</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>图书馆前台帮顾客办理借书证以及书籍借还事物。</li>
+                            
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>个人项目</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]英语PBL模拟面试</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2021.11/time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>主要内容：personal statement的撰写，全英文面试。</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]模拟学位申请面试。   
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]同 3 位同专业同学一起。
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]完成从
+                                <mark>“ps写稿-定稿-背稿-面试”</mark>等工作，并帮助其他同学改稿。
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]面试顺利完成，取得可观成绩，面试经验提加。</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]个人简历网页设计</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2021.11</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：HTML+CSS</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]完成网络与新媒体专业的第一个个人网页，实现个人网页的设计。     
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]与 3 位同学
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]运用html,css等技术实现网页的设计与修改。完成从 “fork-修改_config.yml-修改网页个人内容-配置404文件”等工作，加深html的学习程度，并完成个人网页的设计。 
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]成功做出了网页雏形。
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目3]gitee与GitHub仓库的项目协作</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2021.11</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：markdown+typora</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现gitee与GitHub的熟练运用 
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]与 1 位同学
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]总结 markdown 语法的基本用法，并对本学期所学的文件格式一一列出，进行总结，并学会使用 gitee 进行文件的修改与提交。
+                                <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]熟练使用markdown编写文件，进行各格式文件的编写与总结。
+                            </li>
+                        </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价</h2>
+                <hr/>
+                <p> 本人性格开朗、稳重、有活力，待人热情、真诚；工作认真负责，用心主动，能吃苦耐劳，勇于承受压力，勇于创新；有很强的组织潜力和团队协作精神，具有较强的适应能力；纪律性强，工作用心配合；意志坚强，具有较强的无私奉献精神。</p>
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>© 2021 许丹.文档最后更新时间为
+            <time>2021年11月21日</time>.</p>
+    </footer>
+</body>
+
+</html>
